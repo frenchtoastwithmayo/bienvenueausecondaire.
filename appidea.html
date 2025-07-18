@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenue au Secondaire 🎒</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- Home Section -->
+        <div id="home" class="section active">
+            <div class="header">
+                <h1>Bienvenue au Secondaire! 🎒</h1>
+                <p>Ton guide pour réussir ta transition vers le secondaire</p>
+            </div>
+
+            <div class="welcome-card">
+                <h2>Salut futur élève du secondaire! 👋</h2>
+                <p>
+                    Tu es sur le point de commencer une nouvelle aventure passionnante!
+                    Cette app est là pour t'aider à te préparer et à réussir ta première année au secondaire.
+                    Tu trouveras des conseils, des outils et tout ce dont tu as besoin pour te sentir confiant! ✨
+                </p>
+                <button class="big-button" onclick="showSection('tips')">
+                    Commencer l'aventure! 🚀
+                </button>
+            </div>
+        </div>
+
+        <!-- Tips Section -->
+        <div id="tips" class="section">
+            <div class="header">
+                <h1>Top 10 Conseils 💡</h1>
+                <p>Des astuces essentielles pour réussir au secondaire</p>
+            </div>
+
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <h3>1. N'aie pas peur de demander de l'aide 🙋‍♀️</h3>
+                    <p>Tes profs et tes amis sont là pour t'aider. Poser des questions, c'est intelligent!</p>
+                </div>
+
+                <div class="tip-card">
+                    <h3>2. Utilise un agenda 📅</h3>
+                    <p>Note tous tes devoirs et examens. Ça t'évitera le stress de dernière minute!</p>
+                </div>
+
+                <div class="tip-card">
+                    <h3>3. Joins-toi à des activités 🎭</h3>
+                    <p>Sports, clubs, théâtre... C'est le meilleur moyen de rencontrer des amis!</p>
+                </div>
+
+                <div class="tip-card">
+                    <h3>4. Organise ton casier 🗂️</h3>
+                    <p>Un casier organisé = moins de stress et plus de temps!</p>
+                </div>
+
+                <div class="tip-card">
+                    <h3>5. Mange bien et dors assez 😴</h3>
+                    <p>Ton cerveau a besoin d'énergie pour bien fonctionner!</p>
+                </div>
+
+                <div class="tip-card">
+                    <h3>6. Sois toi-même 🌟</h3>
+                    <p>L'authenticité attire les vraies amitiés. Ne change pas pour plaire!</p>
+                </div>
+
+                <div class="tip-card">
+                    <h3>7. Prends des notes en classe ✍️</h3>
+                    <p>Même si c'est ennuyant, ça t'aidera énormément pour les examens!</p>
+                </div>
+
+                <div class="tip-card">
+                    <h3>8. Gère ton temps d'écran 📱</h3>
+                    <p>Les réseaux sociaux peuvent attendre. Tes études passent en premier!</p>
+                </div>
+
+                <div class="tip-card">
+                    <h3>9. Respecte tout le monde 🤝</h3>
+                    <p>Profs, concierges, autres élèves... Le respect, ça se donne et ça se reçoit!</p>
+                </div>
+
+                <div class="tip-card">
+                    <h3>10. Amuse-toi! 🎉</h3>
+                    <p>Le secondaire, c'est aussi fait pour s'amuser et créer de beaux souvenirs!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Schedule Section -->
+        <div id="schedule" class="section">
+            <div class="header">
+                <h1>Planifie ta semaine 📋</h1>
+                <p>Glisse et dépose les blocs pour organiser ton horaire</p>
+            </div>
+
+            <div class="schedule-container">
+                <div class="blocks-panel">
+                    <h3>Blocs disponibles</h3>
+                    <div class="draggable-block school" draggable="true">📚 École</div>
+                    <div class="draggable-block homework" draggable="true">✏️ Devoirs</div>
+                    <div class="draggable-block fun" draggable="true">🎮 Loisirs</div>
+                    <div class="draggable-block school" draggable="true">📚 École</div>
+                    <div class="draggable-block homework" draggable="true">✏️ Devoirs</div>
+                    <div class="draggable-block fun" draggable="true">🎮 Loisirs</div>
+                </div>
+
+                <div class="schedule-grid">
+                    <h3>Ma semaine</h3>
+                    <div class="week-grid">
+                        <div class="day-column" data-day="lundi">
+                            <div class="day-header">Lundi</div>
+                        </div>
+                        <div class="day-column" data-day="mardi">
+                            <div class="day-header">Mardi</div>
+                        </div>
+                        <div class="day-column" data-day="mercredi">
+                            <div class="day-header">Mercredi</div>
+                        </div>
+                        <div class="day-column" data-day="jeudi">
+                            <div class="day-header">Jeudi</div>
+                        </div>
+                        <div class="day-column" data-day="vendredi">
+                            <div class="day-header">Vendredi</div>
+                        </div>
+                        <div class="day-column" data-day="samedi">
+                            <div class="day-header">Samedi</div>
+                        </div>
+                        <div class="day-column" data-day="dimanche">
+                            <div class="day-header">Dimanche</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stress Section -->
+        <div id="stress" class="section">
+            <div class="header">
+                <h1>Anti-Stress 🧘‍♀️</h1>
+                <p>Des techniques saines pour gérer le stress</p>
+            </div>
+
+            <div class="stress-busters">
+                <div class="stress-card">
+                    <div class="emoji">🫁</div>
+                    <h3>Respiration profonde</h3>
+                    <p>Inspire 4 secondes, retiens 4 secondes, expire 4 secondes. Répète 5 fois!</p>
+                </div>
+
+                <div class="stress-card">
+                    <div class="emoji">📝</div>
+                    <h3>Journal personnel</h3>
+                    <p>Écris tes pensées et sentiments. Ça aide à clarifier ton esprit!</p>
+                </div>
+
+                <div class="stress-card">
+                    <div class="emoji">🚶‍♀️</div>
+                    <h3>Marche dehors</h3>
+                    <p>Un peu d'air frais et de mouvement peuvent faire des miracles!</p>
+                </div>
+
+                <div class="stress-card">
+                    <div class="emoji">🎵</div>
+                    <h3>Écoute de la musique</h3>
+                    <p>Tes chansons préférées peuvent instantanément améliorer ton humeur!</p>
+                </div>
+
+                <div class="stress-card">
+                    <div class="emoji">👥</div>
+                    <h3>Parle à quelqu'un</h3>
+                    <p>Amis, famille, conseiller... Partager tes soucis les rend plus légers!</p>
+                </div>
+
+                <div class="stress-card">
+                    <div class="emoji">🎨</div>
+                    <h3>Activité créative</h3>
+                    <p>Dessine, peins, écris... Laisse ton côté artistique s'exprimer!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonials Section -->
+        <div id="testimonials" class="section">
+            <div class="header">
+                <h1>Ce que j'aurais aimé savoir 💭</h1>
+                <p>Conseils d'élèves qui ont vécu la transition</p>
+            </div>
+
+            <div class="testimonials">
+                <div class="testimonial-card">
+                    <div class="quote">
+                        "Au début, j'avais peur de me perdre dans l'école. Mais après une semaine,
+                        je connaissais tous les chemins! Ne stresse pas trop avec ça."
+                    </div>
+                    <div class="author">- Sarah, 10e année</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote">
+                        "Les profs semblent plus sévères qu'au primaire, mais en fait ils veulent
+                        juste nous préparer pour l'avenir. Ils sont super cool quand on les connaît!"
+                    </div>
+                    <div class="author">- Alex, 11e année</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote">
+                        "J'étais timide et j'avais peur de ne pas me faire d'amis. Mais en me joignant
+                        au club de robotique, j'ai trouvé ma gang!"
+                    </div>
+                    <div class="author">- Maya, 10e année</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote">
+                        "Le plus dur, c'était de gérer tous les devoirs. Mon conseil: commence tout
+                        de suite, ne remets pas à demain!"
+                    </div>
+                    <div class="author">- Jordan, 12e année</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote">
+                        "N'aie pas peur d'être différent! J'étais gêné de mes lunettes et de mes
+                        bonnes notes, mais maintenant je suis fier d'être un 'nerd'!"
+                    </div>
+                    <div class="author">- Émile, 11e année</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quiz Section -->
+        <div id="quiz" class="section">
+            <div class="header">
+                <h1>Quiz du Secondaire 🎯</h1>
+                <p>Découvre ton profil d'élève!</p>
+            </div>
+
+            <div class="quiz-container">
+                <div id="quiz-content">
+                    <div class="quiz-question">
+                        Quelle est ta plus grande inquiétude pour la 9e année?
+                    </div>
+
+                    <div class="quiz-options">
+                        <div class="quiz-option" data-result="explorer">
+                            😰 Me perdre dans l'école
+                        </div>
+                        <div class="quiz-option" data-result="social">
+                            👥 Ne pas me faire d'amis
+                        </div>
+                        <div class="quiz-option" data-result="studieux">
+                            📚 Les notes et les devoirs
+                        </div>
+                        <div class="quiz-option" data-result="aventurier">
+                            🎭 Choisir les bonnes activités
+                        </div>
+                    </div>
+
+                    <button class="big-button" id="quiz-submit" style="display: none;" onclick="showQuizResult()">
+                        Voir mon résultat! ✨
+                    </button>
+                </div>
+
+                <div id="quiz-result" style="display: none;">
+                    <!-- Result will be inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+        <div class="nav-item active" onclick="showSection('home')">
+            <div class="nav-icon">🏠</div>
+            <div class="nav-label">Accueil</div>
+        </div>
+        <div class="nav-item" onclick="showSection('tips')">
+            <div class="nav-icon">💡</div>
+            <div class="nav-label">Conseils</div>
+        </div>
+        <div class="nav-item" onclick="showSection('schedule')">
+            <div class="nav-icon">📅</div>
+            <div class="nav-label">Horaire</div>
+        </div>
+        <div class="nav-item" onclick="showSection('stress')">
+            <div class="nav-icon">🧘‍♀️</div>
+            <div class="nav-label">Anti-Stress</div>
+        </div>
+        <div class="nav-item" onclick="showSection('quiz')">
+            <div class="nav-icon">🎯</div>
+            <div class="nav-label">Quiz</div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
